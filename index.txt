@@ -1,0 +1,20 @@
+<html>
+<head>
+<link rel="shortcut icon" href="icon/icon_img.png">
+<title>GlonBox</title>
+<meta name="description" content="GlonBox. Разработаем сайт под ваши нужды, как и обычному человеку, так и предприятию или организации. У нас дешевле, чем у конкурентов. Заходи к нам и сделай первый заказ!)" />
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;900&family=Ultra&display=swap" rel="stylesheet">
+<script type="text/javascript">
+  
+</script>
+</head>
+<style>
+
+</style>
+<body>
+
+
+</body>
+</html>

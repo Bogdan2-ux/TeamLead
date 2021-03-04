@@ -1,0 +1,378 @@
+<html>
+<head>
+<link rel="shortcut icon" href="icon/icon_img.png">
+<title>LevelUp. Продукт повышения потенции</title>
+<meta name="description" content="" />
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+   <script type="text/javascript" src="js/swiper-bundle.min.js"></script>
+  <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+  <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link href="css/theme-style.css" rel="stylesheet" type="text/css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;900&family=Ultra&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;900&family=Ultra&display=swap" rel="stylesheet">
+<script type="text/javascript">
+document.querySelector("#checkbox1").addEventListener("click", function(event) {
+         event.preventDefault();
+}, false);
+
+document.querySelector("#checkbox2").addEventListener("click", function(event) {
+         event.preventDefault();
+}, false);
+
+document.querySelector("#checkbox3").addEventListener("click", function(event) {
+         event.preventDefault();
+}, false);
+
+$("a.scroll-to").on("click", function(e){
+    e.preventDefault();
+    var anchor = $(this).attr('href');
+    $('html, body').stop().animate({
+        scrollTop: $(anchor).offset().top - 60
+    }, 800);
+});
+</script>
+</head>
+<style>
+
+body {
+padding:0;
+margin:0;
+}
+.video-box {
+	position: relative;
+	overflow: hidden;
+	width:100%;
+	height:500px;
+}
+.video-box video {
+	position: absolute;
+	top: 0px;
+	Background:none;
+	left: 0;
+	width: 0;
+	height: 0; 	
+	z-index: -1;
+}
+.video-content {
+	position: relative;
+	color: white;
+	background:none;
+	width:100%;
+	height:100%;
+	font-size: 20px;
+}
+.video-content:before {
+	z-index: -1;
+	content: '';
+	position: absolute;
+	top: 0px;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #000;
+	opacity: 0.5;	
+}
+p.orbitron {
+padding:0;
+margin:0;
+font-family: 'Ultra', serif;
+	text-shadow:0 0 5px rgba(78, 37, 84);
+	margin-left:2%;
+
+}
+a.love {
+text-decoration:none;
+color:white;
+background:#9932CC;
+padding:2%;
+
+border-radius:0px 10px 10px 0px;
+font-size:25px;
+font-weight:bold;
+border-bottom:2px dashed White;
+}
+a.slider-submit {
+text-decoration:none;
+transition:3s;
+color:Black;
+}
+a.slider-submit:focus {
+font-weight:bold;
+}
+span.grib {
+display: block;
+animation: bounce-top 3s infinite both;
+transition:3s;
+}
+@keyframes bounce-top {
+ 0% {
+ opacity:1;
+ }
+ 25% {
+ opacity:0;
+ }
+ 50% {
+ opacity:1;
+ }
+ 75% {
+ opacity:0;
+ }
+ 100% {
+ opacity:1;
+ }
+}
+a.truck {
+text-decoration:none;
+color:Black;
+}
+</style>
+<body>
+<script type="text/javascript">
+function setVideoCenter() {
+	var $box = $('.video-box');
+	var height = $box.height();
+	var width = $box.width();
+	var new_height = width / 1.78;
+	if (new_height > height) {
+		$box.find('video').css({
+			width: width, 
+			height: new_height, 
+			top: '-' + (new_height / 2 - height / 2) + 'px',
+			left: '0',
+		});	
+	} else {
+		var new_width = height * 1.78;
+		$box.find('video').css({
+			width: new_width, 
+			height: height, 
+			top: '0',
+			left: '-' + (new_width / 2 - width / 2) + 'px'
+		});
+	}	
+}
+ 
+$(function(){
+	setVideoCenter();
+	$(window).resize(setVideoCenter);
+});
+</script>
+<!--блок, фоном которого должно быть видео видео-->
+<div style="border-bottom:5px solid #606060;" class="video-box">
+	<video autoplay loop muted controls="">
+		<source src="video/Pills - 5448.mp4" type="video/mp4">
+	</video>
+  
+	<div class="video-content">
+		<div style="width:100%;height:50px;background:white;">
+		<p style="padding:1%;" class="orbitron"><font size="7px"><span style="border-radius:10px;box-shadow:0 0 10px 5px rgba(211,211,211,1);padding:2%;background:white;"><font color="DarkGreen">Level</font><font color="DarkOrange">Up</font></span></font></p>
+		</div>
+		<div style="width:95%;height:100%;margin:0 auto;">
+		<div style="width:50%;float:left;margin-top:5%;">
+		<p align="right"><img style="width:30%;height:60%;" src="img/prod.png"></p>
+		</div>
+		<div style="width:50%;float:left;margin-top:5%;margin-left:-1%;">
+		<ul>
+		<li style="border-bottom:2px solid White;	text-shadow:0 0 5px rgba(78, 37, 84);padding:2%;"><font size="5px"> эффективность продукта 100 %</font></li>
+		<li style="border-bottom:2px solid White;text-shadow:0 0 5px rgba(78, 37, 84);padding:2%;"><font size="5px"> стоимость продукта для повышения потенции низкая</font></li>
+		<li style="text-shadow:0 0 5px rgba(78, 37, 84);padding:2%;"><font size="5px"> приобретай и не расстраивайся!)</font></li>
+		</ul>
+		<p><a class="love" href="#">Сделать заказ уже сейчас</a></p>
+		</div>
+		</div>
+	 </div>
+</div>
+<div style="width:100%;height:1000px;box-shadow:0 0 10px 5px rgba(211,211,211,1);">
+<div style="width:33%;float:left;height:100%;">
+<div style="width:100%;height:30%;box-shadow:0 0 10px 5px rgba(211,211,211,1);margin-top:2%;">
+<p align="center" style=""><img src="img/5b88ffcc57cde1658f273648.jpg" style="width:35%;border-radius:100px;height:60%;border:2px dashed Black;margin-top:2%;"></p>
+<br><p align="center"><span style="width:100%;height:50px;padding:2%;border-radius:5px;box-shadow:0 0 10px 5px rgba(211,211,211,1);background:white;">ОПИСАНИЕ БЛОКА</span></p>
+</div>
+<div style="width:100%;height:30%;box-shadow:0 0 10px 5px rgba(211,211,211,1);margin-top:3%;background: linear-gradient(45deg, #EECFBA, #C5DDE8);">
+<p align="center" style=""><img src="img/5b88ffcc57cde1658f273648.jpg" style="width:35%;border-radius:100px;height:60%;border:2px dashed Black;margin-top:2%;"></p>
+<br><p align="center"><span style="width:100%;height:50px;padding:2%;border-radius:5px;box-shadow:0 0 10px 5px rgba(211,211,211,1);background:white;">ОПИСАНИЕ БЛОКА</span></p>
+</div>
+<div style="width:100%;height:30%;box-shadow:0 0 10px 5px rgba(211,211,211,1);margin-top:3%;">
+<p align="center" style=""><img src="img/5b88ffcc57cde1658f273648.jpg" style="width:35%;border-radius:100px;height:60%;border:2px dashed Black;margin-top:2%;"></p>
+<br><p align="center"><span style="width:100%;height:50px;padding:2%;border-radius:5px;box-shadow:0 0 10px 5px rgba(211,211,211,1);">ОПИСАНИЕ БЛОКА</span></p>
+</div>
+</div>
+<div style="width:32%;margin-left:1%;float:left;height:100%;">
+<p align="center"><img style="width:45%;height:40%;margin-top:52%;" src="img/prod.png"></p>
+<a href="#" style="text-decoration:none;color:Black;font-weight:bold;font-size:20px;background:white;">
+<div style="width:50%;margin:0 auto;BOX-SHADOW:0 0 10px 5px rgba(69,69,69);padding:5px;">
+<p align="center"><a style="text-decoration:none;color:Black;" href="#ya1" class="scroll-to">ЗАКАЗАТЬ</a></p>
+</div>
+</a>
+</div>
+<div style="width:33%;margin-left:1%;float:left;height:100%;">
+<div style="width:100%;height:30%;box-shadow:0 0 10px 5px rgba(211,211,211,1);margin-top:2%;background: linear-gradient(45deg, #EECFBA, #C5DDE8);">
+<p align="center" style=""><img src="img/5b88ffcc57cde1658f273648.jpg" style="width:35%;border-radius:100px;height:60%;border:2px dashed Black;margin-top:2%;"></p>
+<br><p align="center"><span style="width:100%;height:50px;padding:2%;border-radius:5px;box-shadow:0 0 10px 5px rgba(211,211,211,1);background:white;">ОПИСАНИЕ БЛОКА</span></p>
+</div>
+<div style="width:100%;height:30%;box-shadow:0 0 10px 5px rgba(211,211,211,1);margin-top:3%;background: linear-gradient(45deg, #EECFBA, #C5DDE8);">
+<p align="center" style=""><img src="img/5b88ffcc57cde1658f273648.jpg" style="width:35%;border-radius:100px;height:60%;border:2px dashed Black;margin-top:2%;"></p>
+<br><p align="center"><span style="width:100%;height:50px;padding:2%;border-radius:5px;box-shadow:0 0 10px 5px rgba(211,211,211,1);background:white;">ОПИСАНИЕ БЛОКА</span></p>
+</div>
+<div style="width:100%;height:30%;box-shadow:0 0 10px 5px rgba(211,211,211,1);margin-top:3%;background: linear-gradient(45deg, #EECFBA, #C5DDE8);">
+<p align="center" style=""><img src="img/5b88ffcc57cde1658f273648.jpg" style="width:35%;border-radius:100px;height:60%;border:2px dashed Black;margin-top:2%;background:white;"></p>
+<br><p align="center"><span style="width:100%;height:50px;padding:2%;border-radius:5px;box-shadow:0 0 10px 5px rgba(211,211,211,1);background:white;">ОПИСАНИЕ БЛОКА</span></p>
+</div>
+</div>
+</div>
+<div style="width:60%;height:700px;margin:0 auto;">
+<p ALIGN="CENTER"><font size="7px">ОТЗЫВЫ НАШИХ ПОТРЕБИТЕЛЕЙ</font></p>
+<div id="div1" style="width:100%;height:90%;box-shadow:0 0 10px 5px rgba(69,69,69);display:block;">
+<div style="width:40%;height:50%;box-shadow:0 0 10px 5px rgba(211,211,211,1);float:left;">
+
+<img style="width:100%;height:100%;box-shadow:0 0 10px 5px rgba(69,69,69);" src="photo/house-m-d-hyu-lori-doktor-haus.jpg">
+
+</div>
+<div style="float:left;width:50%;">
+<p style="padding:2%;border-bottom:2px solid DarkBlue;margin-left:4%;"><font size="5px"><b>Скильский Марк Владимирович</b></font></p>
+<li style="margin-left:4%;"><font size="5px">СТРАНА: C**</font></li>
+<li style="margin-left:4%;"><font size="5px">ГОРОД: С** *********</font></li>
+
+<li style="margin-left:4%;"><font size="5px">ПОЛ: Мужской</font></li>
+<li style="margin-left:4%;"><font size="5px">ЭЛ. АДРЕС: skil@gmail.com</font></li>
+</div>
+<div style="width:100%;overflow:auto;">
+<p style="padding:2%;"><font size="5px" color="#606060">СОДЕРЖАНИЕ ОТЗЫВА...</font></p>
+</div>
+</div>
+<div id="div2" style="width:100%;height:90%;box-shadow:0 0 10px 5px rgba(69,69,69);display:none;">
+<div style="width:40%;height:50%;box-shadow:0 0 10px 5px rgba(211,211,211,1);float:left;">
+
+<img style="width:100%;height:100%;box-shadow:0 0 10px 5px rgba(69,69,69);" src="photo/black-and-white-woman-white-photography-portrait-model-darkness-black-monochrome-close-up-face-eye-head-beauty-organ-photo-shoot-brown-hair-monochrome-photography-portr.jpg">
+
+</div>
+<div style="float:left;width:50%;">
+<p style="padding:2%;border-bottom:2px solid DarkBlue;margin-left:4%;"><font size="5px"><b>Каралькевич Лия Угоровская</b></font></p>
+<li style="margin-left:4%;"><font size="5px">СТРАНА: Б*******</font></li>
+<li style="margin-left:4%;"><font size="5px">ГОРОД: Г*****</font></li>
+
+<li style="margin-left:4%;"><font size="5px">ПОЛ: Женский</font></li>
+<li style="margin-left:4%;"><font size="5px">ЭЛ. АДРЕС: lija.ugorova@gmail.com</font></li>
+</div>
+<div style="width:100%;overflow:auto;">
+<p style="padding:2%;"><font size="5px" color="#606060">СОДЕРЖАНИЕ ОТЗЫВА...</font></p>
+</div>
+</div>
+<div id="div3" style="width:100%;height:90%;box-shadow:0 0 10px 5px rgba(69,69,69);display:none;">
+<div style="width:40%;height:50%;box-shadow:0 0 10px 5px rgba(211,211,211,1);float:left;">
+
+<img style="width:100%;height:100%;box-shadow:0 0 10px 5px rgba(69,69,69);" src="photo/668d8136f87954bfd314ab422dc1184b.jpg">
+
+</div>
+<div style="float:left;width:50%;">
+<p style="padding:2%;border-bottom:2px solid DarkBlue;margin-left:4%;"><font size="5px"><b>Шхаланская Маринэ Ханскевич</b></font></p>
+<li style="margin-left:4%;"><font size="5px">СТРАНА: Я*****</font></li>
+<li style="margin-left:4%;"><font size="5px">ГОРОД: Г*****</font></li>
+
+<li style="margin-left:4%;"><font size="5px">ПОЛ: Женский</font></li>
+<li style="margin-left:4%;"><font size="5px">ЭЛ. АДРЕС: erpo.nisdomc@gmail.com</font></li>
+</div>
+<div style="width:100%;overflow:auto;">
+<p style="padding:2%;"><font size="5px" color="#606060">СОДЕРЖАНИЕ ОТЗЫВА...</font></p>
+</div>
+</div>
+
+<div style="width:100%;height:50px;margin-top:5%;">
+<div style="width:32%;float:left;height:100%;">
+<p style="padding:1%;"><font size="5px"><a class="slider-submit" href="javascript: void 0" onclick="document.getElementById('div1').style.display='block';document.getElementById('div2').style.display='none';document.getElementById('div3').style.display='none';" id="#checkbox1"> &laquo; ПЕРВЫЙ СЛАЙД</a></font></p>
+</div>
+<div style="width:36%;float:left;height:100%;">
+<p style="padding:1%;" align="center"><font size="5px"><a class="slider-submit" href="javascript: void 0" onclick="document.getElementById('div1').style.display='none';document.getElementById('div2').style.display='block';document.getElementById('div3').style.display='none';" id="#checkbox2">|| ВТОРОЙ СЛАЙД ||</a></font></p>
+</div>
+<div style="width:32%;float:left;height:100%;">
+<p style="padding:1%;" align="right"><font size="5px"><a class="slider-submit" href="javascript: void 0" onclick="document.getElementById('div1').style.display='none';document.getElementById('div2').style.display='none';document.getElementById('div3').style.display='block';" id="#checkbox3">ТРЕТИЙ СЛАЙД &raquo; </a></font></p>
+</div>
+</div>
+</div>
+
+
+<div style="width:100%;height:700px;box-shadow:0 0 10px 5px rgba(211,211,211,1);">
+<div style="width:100%;background:black;margin:0 auto;height:90%;box-shadow:0 0 10px 5px rgba(69,69,69);margin-top:10%;">
+<div style="float:left;width:45%;height:100%;background:white;box-shadow:0 0 10px 5px rgba(211,211,211,1);margin-left:3%;">
+<img style="width:100%;height:100%;" src="img/Photo.png">
+</div>
+<div style="float:left;width:45%;height:100%;background:white;box-shadow:0 0 10px 5px rgba(211,211,211,1);margin-left:3%;">
+<p class="orbitron" style="padding:0;font-size:50px;border-bottom:2px solid DarkBlue;" align="center">LevelUp</p>
+<p style="padding:2%;font-size:25px;text-align:justify;">Препарат для потенции может использоваться и как самостоятельное, отдельное средство, и как элемент комбинированной терапии, назначенной врачом. Во втором случае необходимо строго придерживаться рекомендаций специалиста, поскольку многие таблетки, кратковременно улучшающие эрекцию, стимулируют кровообращение, что может не совмещаться с приёмом других таблеток, обладающих сосудорасширяющим действием.</p>
+<a style="padding:2%;text-decoration:none;color:Black;" href="#">
+<div style="width:80%;margin:0 auto;padding:2%;border-radius:10px;box-shadow:0 0 10px 5px rgba(211,211,211,1);">
+<p align="center"><font size="5px">Заказать</font></p>
+</div>
+</a>
+</div>
+</div>
+</div>
+<div style="width:100%;height:10%;background:white;margin-top:-5%;box-shadow:0 0 10px 5px rgba(211,211,211,1);">
+<li style="float:left;margin-left:2%;padding:2%;font-size:20px;font-weight:bold;">#Хорошее_средство</li>
+<li style="float:left;margin-left:2%;padding:2%;font-size:20px;font-weight:bold;">#Эффективное_средство</li>
+<li style="float:left;margin-left:2%;padding:2%;font-size:20px;font-weight:bold;">#Действующее_средство</li>
+</div>
+
+<p style="padding:2%;font-weight:bold;border-bottom:2px solid #606060;"><font size="6px">ФОРМА ДЛЯ ЗАКАЗА</font></p>
+
+<div style="width:95%;margin:0 auto;">
+
+<p style="padding:2%;"><font size="5px">Название продукта: <input style="font-size:20px;padding:1%;border-radius:5px;width:90%;" type="text" name="" value="LevelUp. Продукт повышения потенции"></font></p>
+<p style="padding:2%;margin-top:-3%;"><font size="5px">Таймер обратного отсчёта: <span style="font-size:25px;padding:1%;border-radius:20px;width:45%;" id="reparat"></span> сек. до конца акции</font></p>
+<p style="padding:2%;margin-top:-3%;"><font size="5px"><strike><b>880 руб.</b></strike> <span class="grib">790 руб.</span></font></p>
+
+
+<p id="rocket"></p>
+<script>
+let timer; // пока пустая переменная
+let x = 36000; // стартовое значение обратного отсчета
+countdown(); // вызов функции
+function countdown(){  // функция обратного отсчета
+  document.getElementById('reparat').innerHTML = x;
+  x--; // уменьшаем число на единицу
+  if (x<0){
+    clearTimeout(timer); // таймер остановится на нуле
+    alert('Акция закончилась');
+  }
+  else {
+    timer = setTimeout(countdown, 10000);
+  }
+}
+
+$(function(){
+  let input = $('#test'),
+      inpVal = input.val();
+  
+  $('.select').on('change', function(){
+    input.val(inpVal + $(this).val());
+  });
+});
+</script>
+<div style="float:left;width:45%;">
+<p style="padding:2%;margin-top:-3%;"><font size="5px">ВАШЕ ФИО: <input id='test' style="font-size:20px;padding:1%;border-radius:5px;width:100%;" type="text" name="title" value="" placeholder="Введите ФИО"></font></p>
+<p style="padding:2%;margin-top:-3%;"><font size="5px">ВАШ ТЕЛЕФОН: <input style="font-size:20px;padding:1%;border-radius:5px;width:100%;" type="number" name="telephone" value="" placeholder="666-333-555"></font></p>
+<p style="padding:2%;margin-top:-3%;"><font size="5px" color="#606060">ВОЗМОЖНЫЕ ФИО:<select style="padding:1%;width:100%;font-size:20px;" class="select">
+  <option value="Вольская Марья Петровна">Вольская Марья Петровна</option>
+  <option value="Анабесян Алик Аристархович">Анабесян Алик Аристархович</option>
+  <option value="Чудила Тапок Иванович">Чудила Тапок Иванович</option>
+  <option value="Карельский Морковь Волкович">Карельский Морковь Волкович</option>
+</select></font></p>
+<a class="truck" href="">
+<div style="width:50%;margin:0 auto;padding:2%;border:2px dashed White;background:Yellow;border-radius:50px;">
+<p align="center"><font size="5px">ЗАКАЗАТЬ</font></p>
+</div>
+</a>
+</div>
+<div style="width:45%;margin-left:10%;height:500px;float:left;">
+<img style="width:50%;height:100%;" src="img/prod.png">
+</div>
+</div>
+
+
+</body>
+</html>
